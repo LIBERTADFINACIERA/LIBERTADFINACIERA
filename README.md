@@ -9,12 +9,13 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
             color: #333;
         }
         header {
-            background-color: #003366; /* Azul oscuro */
+            background-color: #0033cc;
             color: #fff;
-            padding: 20px;
+            padding: 10px 20px;
             text-align: center;
         }
         .container {
@@ -22,98 +23,67 @@
             margin: auto;
             overflow: hidden;
         }
-        nav {
-            float: left;
-            width: 20%;
-            background: #cc0000; /* Rojo */
-            padding: 15px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            display: block;
-            padding: 10px;
-        }
-        nav a:hover {
-            background: #ff3333; /* Rojo claro */
-        }
         .main-content {
-            float: right;
-            width: 75%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+        .course, .books {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
             padding: 20px;
+            width: 45%;
         }
-        .section {
-            margin-bottom: 20px;
+        .course h2, .books h2 {
+            color: #0033cc;
         }
-        h2 {
-            border-bottom: 2px solid #003366;
-            padding-bottom: 10px;
-            color: #003366;
+        .course img, .books img {
+            max-width: 100%;
+            border-radius: 5px;
         }
         .btn {
             display: inline-block;
             padding: 10px 20px;
             color: #fff;
-            background: #cc0000; /* Rojo */
+            background-color: #cc0000;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
         }
         .btn:hover {
-            background: #ff3333; /* Rojo claro */
+            background-color: #b30000;
         }
         footer {
-            background-color: #003366; /* Azul oscuro */
+            background-color: #0033cc;
             color: #fff;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
+            padding: 10px 0;
+            position: absolute;
             bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Curso de Libertad Financiera</h1>
-        </div>
+        <h1>Curso de Libertad Financiera</h1>
     </header>
     <div class="container">
-        <nav>
-            <a href="#curso">Curso</a>
-            <a href="#libros">Libros</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
         <div class="main-content">
-            <section id="curso" class="section">
-                <h2>Curso de Libertad Financiera</h2>
-                <p>Descubre nuestro curso completo sobre libertad financiera, diseñado para ayudarte a gestionar tus finanzas y alcanzar tus metas económicas. Aprende desde lo básico hasta estrategias avanzadas con materiales y soporte continuo.</p>
-                <a href="#compra-curso" class="btn">Compra el Curso</a>
-            </section>
-            <section id="libros" class="section">
+            <div class="course">
+                <h2>Descubre Nuestro Curso de Libertad Financiera</h2>
+                <img src="https://via.placeholder.com/400x250" alt="Curso de Libertad Financiera">
+                <p>¡Aprende a gestionar tus finanzas y alcanza la libertad financiera con nuestro curso especializado! Este curso te guiará a través de estrategias efectivas para manejar tu dinero y alcanzar tus metas económicas.</p>
+                <a href="#" class="btn">Compra Ahora</a>
+            </div>
+            <div class="books">
                 <h2>Libros Recomendados</h2>
-                <p>Explora nuestra selección de libros sobre finanzas personales y libertad financiera. Cada libro ha sido seleccionado cuidadosamente para proporcionarte conocimientos valiosos y prácticos.</p>
-                <ul>
-                    <li>Libro 1: <a href="#compra-libro" class="btn">Compra</a></li>
-                    <li>Libro 2: <a href="#compra-libro" class="btn">Compra</a></li>
-                </ul>
-            </section>
-            <section id="contacto" class="section">
-                <h2>Contacto</h2>
-                <p>¿Tienes preguntas o necesitas más información? No dudes en ponerte en contacto con nosotros.</p>
-                <form action="mailto:tu-email@ejemplo.com" method="post" enctype="text/plain">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                    <br><br>
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                    <br><br>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                    <br><br>
-                    <input type="submit" value="Enviar">
-                </form>
-            </section>
+                <img src="https://via.placeholder.com/400x250" alt="Libros de Finanzas">
+                <p>Explora nuestra selección de libros sobre finanzas personales y crecimiento económico. Estos libros te proporcionarán conocimientos valiosos para mejorar tu bienestar financiero.</p>
+                <a href="#" class="btn">Compra Libros</a>
+            </div>
         </div>
     </div>
     <footer>
@@ -121,15 +91,3 @@
     </footer>
 </body>
 </html>
-- 👋 Hi, I’m @LIBERTADFINACIERA
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-
-<!---
-LIBERTADFINACIERA/LIBERTADFINACIERA is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
